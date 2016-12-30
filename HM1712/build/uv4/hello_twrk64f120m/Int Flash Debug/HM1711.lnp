@@ -1,0 +1,36 @@
+--cpu Cortex-M4.fp
+".\int flash debug\main.o"
+".\int flash debug\queue.o"
+".\int flash debug\common_fun.o"
+".\int flash debug\adc_ctrl.o"
+".\int flash debug\ftm.o"
+".\int flash debug\gpio.o"
+".\int flash debug\common_inc.o"
+".\int flash debug\eeprom.o"
+".\int flash debug\flash_rw.o"
+".\int flash debug\api.o"
+".\int flash debug\gs_protocol.o"
+".\int flash debug\thermostat.o"
+".\int flash debug\system_mk64f12.o"
+".\int flash debug\capture.o"
+".\int flash debug\can_ctrl.o"
+".\int flash debug\dac_ctrl.o"
+".\int flash debug\uart_ctrl.o"
+".\int flash debug\fpga_int.o"
+".\int flash debug\time.o"
+".\int flash debug\i2c_ctrl.o"
+--strict --scatter "..\..\..\..\..\..\twrk64f120m.uv4\debug\bsp\intflash.scf"
+
+..\..\..\..\..\..\twrk64f120m.uv4\debug\bsp\bsp.lib
+..\..\..\..\..\..\twrk64f120m.uv4\debug\bsp\bsp.lib(vectors.o)
+..\..\..\..\..\..\twrk64f120m.uv4\debug\psp\psp.lib
+..\..\..\..\..\..\twrk64f120m.uv4\debug\psp\psp.lib(linker_symbols.o)
+ --keep linker_symbols.o(KERNEL_DATA_START) 
+ --keep linker_symbols.o(KERNEL_DATA_END) 
+ --keep linker_symbols.o(BOOT_STACK) 
+ --keep vectors.o(.vectors_rom) 
+ --diag_suppress=6314,6329 
+ --remove 
+ --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Int Flash Debug\HM1711.map" -o ".\Int Flash Debug\HM1711.axf"

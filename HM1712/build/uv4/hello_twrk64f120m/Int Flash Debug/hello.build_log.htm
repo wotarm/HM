@@ -1,0 +1,240 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Freescale\Freescale_MQX_4_1\mqx\examples\middle_power\build\uv4\hello_twrk64f120m\middle_power.uvproj
+Project File Date:  08/28/2015
+
+<h2>Output:</h2>
+Build target 'hello_twrk64f120m Int Flash Debug'
+compiling hello.c...
+../../../hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+../../../hello.c(75): warning:  #1295-D: Deprecated declaration module_out - give arg types
+  void module_out();
+../../../hello.c(76): warning:  #1295-D: Deprecated declaration module_shut - give arg types
+  void module_shut();
+../../../hello.c(240): warning:  #111-D: statement is unreachable
+      _task_block();
+../../../hello.c(176): warning:  #177-D: variable "j" was declared but never referenced
+        int j = 0;
+../../../hello.c: 5 warnings, 0 errors
+compiling spi_memory.c...
+compiling spi_test.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\spi_test.c(679): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\spi_test.c: 2 warnings, 0 errors
+compiling queue.c...
+compiling uart_test.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\uart_test.c(53): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\uart_test.c: 2 warnings, 0 errors
+compiling common_fun.c...
+..\..\..\common_fun.c(185): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\common_fun.c: 1 warning, 0 errors
+compiling adc_ctrl.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\adc_ctrl.c(211): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\adc_ctrl.c(39): warning:  #177-D: variable "evn" was declared but never referenced
+  static LWEVENT_STRUCT evn;
+..\..\..\adc_ctrl.c(60): warning:  #177-D: function "print_all_lwadc_attributes" was declared but never referenced
+  static void print_all_lwadc_attributes( LWADC_STRUCT_PTR lwadc_ptr)
+..\..\..\adc_ctrl.c: 4 warnings, 0 errors
+compiling ftm.c...
+compiling gpio.c...
+compiling common_inc.c...
+compiling EEPROM.c...
+..\..\..\EEPROM.c(284): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\EEPROM.c: 1 warning, 0 errors
+compiling flash_rw.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\flash_rw.c(236): warning:  #177-D: variable "RunInRAM" was declared but never referenced
+                        void (* RunInRAM)(volatile uint8_t *, void (_CODE_PTR_) (volatile uint32_t));
+..\..\..\flash_rw.c(237): warning:  #550-D: variable "RunInvalidateInRAM" was set but never used
+                        void (* RunInvalidateInRAM)(volatile uint32_t);
+..\..\..\flash_rw.c(320): warning:  #1-D: last line of file ends without a newline
+  }  
+..\..\..\flash_rw.c: 4 warnings, 0 errors
+compiling api.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\api.c(69): warning:  #177-D: variable "odd" was declared but never referenced
+        unsigned char odd = c%2;
+..\..\..\api.c(337): warning:  #1-D: last line of file ends without a newline
+  */
+..\..\..\api.c: 3 warnings, 0 errors
+compiling dac.c...
+compiling gs_protocol.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\gs_protocol.c(648): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+        for(idx = 0;idx <strlen(strpara); idx++)
+..\..\..\gs_protocol.c(676): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                memcpy(tmp, strpara + split + 3, strlen(strpara) - split -2);
+..\..\..\gs_protocol.c(679): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                hexstr2ch(tmp, dat, len);
+..\..\..\gs_protocol.c(683): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                memcpy(tmp,strpara + split +1, strlen(strpara) - split);
+..\..\..\gs_protocol.c(708): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+        for(idx = 0;idx <strlen(strpara); idx++)
+..\..\..\gs_protocol.c(720): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                memcpy(tmp, strpara, strlen(strpara));
+..\..\..\gs_protocol.c(730): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                memcpy(temp, strpara + split + 1, strlen(strpara) - split -1 );
+..\..\..\gs_protocol.c(739): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+        hex2str(dat, tmp, len*2);
+..\..\..\gs_protocol.c(754): warning:  #69-D: integer conversion resulted in truncation
+        temp[1] = Reversion;
+..\..\..\gs_protocol.c(778): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if(para > HIGHTEMLD)
+..\..\..\gs_protocol.c(780): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if(para < LOWTEMLD)
+..\..\..\gs_protocol.c(783): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        j = (para - 12.633)*32767.0/3/15.906;
+..\..\..\gs_protocol.c(850): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        i = (para*0.05+0.0085)/1.2 *4095 + base_LDI_DAC;
+..\..\..\gs_protocol.c(983): warning:  #550-D: variable "li" was set but never used
+        long int li;
+..\..\..\gs_protocol.c(1036): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        j = (para*0.05+0.4085)/1.2 *4095;
+..\..\..\gs_protocol.c(1047): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                if(para > HIGHTEMLD)
+..\..\..\gs_protocol.c(1049): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                if(para < LOWTEMLD)
+..\..\..\gs_protocol.c(1051): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                j = (para - 12.633)*32767.0/3/15.906;
+..\..\..\gs_protocol.c(1288): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+        readDevCanID(&ch);
+..\..\..\gs_protocol.c(1289): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+        hex2str(&ch, tmp, 1);
+..\..\..\gs_protocol.c(1299): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+        hex2str(&ch, tmp, 0x01);
+..\..\..\gs_protocol.c(1390): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\gs_protocol.c: 23 warnings, 0 errors
+compiling Thermostat.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Thermostat.c(73): warning:  #177-D: variable "real_pwm" was declared but never referenced
+        int real_pwm;
+..\..\..\Thermostat.c(75): warning:  #177-D: variable "sb" was declared but never referenced
+        char sb[16];
+..\..\..\Thermostat.c(170): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\Thermostat.c: 4 warnings, 0 errors
+compiling can_test.c...
+..\..\..\hw_ptr.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\can_test.c(814): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                                i = (*pf*0.05+0.4085)/1.2 *4095;
+..\..\..\can_test.c(827): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+                        thermoPara_LD.T_Target = (*pf - 12.633)*32767.0/3/15.906;
+..\..\..\can_test.c(783): warning:  #550-D: variable "f" was set but never used
+        float f;
+..\..\..\can_test.c: 4 warnings, 0 errors
+compiling system_MK64F12.c...
+compiling fpga_int.c...
+linking...
+Program Size: Code=110884 RO-data=4640 RW-data=416 ZI-data=1128  
+FromELF: creating hex file...
+".\Int Flash Debug\middle_power.axf" - 0 Error(s), 53 Warning(s).
+Load "C:\\Freescale\\Freescale_MQX_4_1\\mqx\\examples\\middle_power\\build\\uv4\\hello_twrk64f120m\\Int Flash Debug\\middle_power.axf" 
+Set JLink Project File to "C:\Freescale\Freescale_MQX_4_1\mqx\examples\middle_power\build\uv4\hello_twrk64f120m\JLinkSettings.ini"
+* JLink Info: Device "MK64FX512XXX12" selected (640 KB flash, 192 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.90 , compiled Jul 28 2014 10:35:20
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: ETB present.
+* JLink Info: CSTF present.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: MK64FX512xxx12
+VTarget = 3.282V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+No Algorithm found for: 00000000H - 00009FFFH
+Partial Erase Done (areas with no algorithms skipped!)
+No Algorithm found for: 00000000H - 00009FFFH
+Partial Programming Done (areas with no algorithms skipped!)
+Partial Verify OK (areas with no algorithms skipped!)
+Application running ...
+
+DLL: V4.90 , compiled Jul 28 2014 10:35:20
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: ETB present.
+* JLink Info: CSTF present.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: MK64FX512xxx12
+VTarget = 3.283V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+Full Chip Erase Done.
+FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: ETB present.
+* JLink Info: CSTF present.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: MK64FX512xxx12
+VTarget = 3.285V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+Full Chip Erase Done.
